@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form for practice</title>
+        <base href= "http://web.it.nctu.edu.tw">
+        <meta charset = "utf-8">
+        <meta http-equiv = "author" content = "Jason Huang" />
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>User Info</legend>
+                <p>Username:
+                    <input type = "text" name = "username" maxlength = "12" required = "required"/>
+                </p>
+
+                <p>Password:
+                    <input type = "password" name = "password" maxlength = "18" required = "required"/>
+                </p>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Personal Info</legend>
+                    <p>Bio:
+                        <textarea name = "bio" cols = "25" rows = "6" placeholder= "Enter your biography"></textarea>
+                    </p>
+
+                    <p>Graduate:
+                        <select name = "graduate">
+                            <option value = "junior">Junior High School</option>
+                            <option value = "senior">Senior High School</option>
+                            <option value = "university">University</option>
+                            <option value = "graduate">Gradute</option>
+                        </select>
+                    </p>
+                    
+                    <label for = "birthday">Birthday:</label>
+                        <input type = "date" name = "birthday" /></br>
+                    <label>Age:<input type = "text" name = "age" /></label></br>
+                        <p>Gender:
+                            <input id = "female" type = "radio" name = "gender" value = "female">
+                            <label for = "female">Female</label>           
+                            <input id = "male" type = "radio" name = "gender" value = "male">
+                            <label for = "male">Male</label>
+                        </p>
+                        
+                        <p>Email:
+                            <input type = "url" name = "email" />
+                        </p>
+
+                        <p>Image:
+                            <input type = "file" name = "person_image" /></br>
+                            <input type = "submit" value = "Upload" />
+                        </p>
+            </fieldset>
+            <input type = "checkbox" name = "agree" check= "unchecked" />Are you agree with the agreement?</br>
+            <input type = "submit" value = "Submit" />
+        </form>
+    </body> 
+</html>
